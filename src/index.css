@@ -98,3 +98,10 @@ p {
   gap: 20px;
   background-color: #EDF7FA;
 }
+
+ul {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
