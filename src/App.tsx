@@ -8,9 +8,16 @@ export default function App() {
 
   return (
     <>
-      <button onClick={
-        () => setPage(page => page === 'home' ? 'works' : 'home')
-      }>Change Page</button>
+      <nav>
+        <ul>
+          <li>
+            <span onClick={() => setPage('home')}>Home</span>
+          </li>
+          <li>
+            <span onClick={() => setPage('works')}>Works</span>
+          </li>
+        </ul>
+      </nav>
 
       {page === "home" ? <HomePage /> : <WorksPage />}
     </>

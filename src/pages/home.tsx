@@ -1,4 +1,4 @@
-import Post from "../ui/Post"
+import Post from "../ui/post/post"
 
 export default function HomePage() {
     return (
