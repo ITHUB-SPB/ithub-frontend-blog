@@ -1,6 +1,6 @@
 import styles from './nav.module.css'
 
-type PageName = 'home' | 'works'
+type PageName = 'home' | 'works' | 'example'
 
 type NavProps = {
   active: PageName,
