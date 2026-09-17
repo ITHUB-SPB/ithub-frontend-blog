@@ -54,6 +54,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  align-items: center;
 }
 
 body {
@@ -97,6 +98,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 20px;
+  width: 858px;
   background-color: #edf7fa;
 }
 
@@ -115,7 +117,6 @@ ul {
   margin-block-end: 0;
   padding-inline-start: 0;
 }
-
 
 .introduction {
   display: grid;

@@ -22,7 +22,7 @@ export default function HomePage() {
         </div>
         <img src="/avatar.png" alt="" className="introduction-avatar" />
       </section>
-      <section>
+      <section className="recent">
         <h2>Recent posts</h2>
         <div className="row">
           <Post
@@ -37,7 +37,7 @@ export default function HomePage() {
           />
         </div>
       </section>
-      <section>
+      <section className="featured">
         <h2>Featured works</h2>
         <ul className="collumn">
           <li>
