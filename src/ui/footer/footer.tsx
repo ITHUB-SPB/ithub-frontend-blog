@@ -46,7 +46,7 @@ function Footer() {
           />
         </li>
       </ul>
-      <h3>Copyright ©2020 All rights reserved </h3>
+      <h3 className={styles.text}>Copyright ©2020 All rights reserved </h3>
     </>
   );
 }
