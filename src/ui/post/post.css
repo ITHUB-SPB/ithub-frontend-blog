@@ -1,6 +1,11 @@
 .post {
     padding: 24px 21px 7px 23px;
     background-color: white;
+    display: block;
+}
+
+.post__title {
+    font-size: 26px;
 }
 
 .post__meta {

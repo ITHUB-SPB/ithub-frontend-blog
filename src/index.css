@@ -97,11 +97,15 @@ p {
     margin: 0 149px;
 }
 
+.recent_posts {
+    background-color: #edf7fa;
+}
+
 .row {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: #edf7fa;
+    margin-bottom: 32px;
 }
 
 ul {
@@ -132,4 +136,9 @@ ul {
 .hero__avatar {
     width: 243px;
     height: 243px;
+}
+
+.works_title {
+    font-size: 44px;
+    font-weight: 900;
 }

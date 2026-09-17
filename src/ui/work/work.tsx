@@ -1,6 +1,6 @@
 import styles from "./work.module.css";
 
-type WorkProps = {
+export type WorkProps = {
     title: string;
     year: string;
     tags: string;

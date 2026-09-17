@@ -1,10 +1,7 @@
 import Post from "../ui/post/post";
-import Work from "../ui/work/work";
+import WorkList from "../ui/workList/workList";
 
-import WorkImage1 from "./../assets/work_image_1.png";
-import WorkImage2 from "./../assets/work_image_2.png";
-import WorkImage3 from "./../assets/work_image_3.png";
-import WorkImage4 from "./../assets/work_image_4.png";
+import { works } from "../data";
 
 export default function HomePage() {
     return (
@@ -30,7 +27,7 @@ export default function HomePage() {
                     />
                 </div>
             </section>
-            <section>
+            <section className="recent_posts">
                 <div className="container">
                     <h2>Recent posts</h2>
                     <div className="row">
@@ -48,13 +45,7 @@ export default function HomePage() {
             <section>
                 <div className="container">
                     <h2>Featured works</h2>
-                    <Work
-                        title="Designing Dashboards"
-                        year="2020"
-                        tags="Dashboard"
-                        description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-                        image={WorkImage1}
-                    />
+                    <WorkList works={works} limit={3} />
                 </div>
             </section>
         </>
