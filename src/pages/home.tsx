@@ -1,12 +1,24 @@
 import Post from "../ui/post/post";
 import Cards from "../ui/cards/cards";
-import pic1 from "/images.jpg"
 import Footer from "../ui/footer/footer";
+
+import pic1 from "/images.jpg";
 
 export default function HomePage() {
   return (
     <>
-      <h1>Hi, I am John, Creative Technologist</h1>
+      <section>
+        <h1>Hi, I am John, Creative Technologist</h1>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <div>
+          <img src="" alt="" />
+        </div>
+        <div></div>
+      </section>
       <section>
         <h2>Recent posts</h2>
         <div className="row">
@@ -45,7 +57,7 @@ export default function HomePage() {
           /> */}
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }
