@@ -10,19 +10,17 @@ export default function HomePage() {
     <>
       <section className="introduction">
         <div className="introduction-textbox">
-          <h1 className="introduction-title">
-            Hi, I am John, Creative Technologist
-          </h1>
-          <p className="introduction-text">
+          <h1>Hi, I am John, Creative Technologist</h1>
+          <p>
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.
           </p>
           <button className="introduction-button">Download Resume</button>
         </div>
-        <img src="/avatar.png" alt="" className="introduction-avatar" />
+        <img className="introduction-avatar" src="/avatar.png" alt="" />
       </section>
-      <section className="recent">
+      {/* <section className="recent">
         <h2>Recent posts</h2>
         <div className="row">
           <Post
@@ -49,7 +47,6 @@ export default function HomePage() {
             />
           </li>
           <li>
-            {" "}
             <Cards
               images={pic2}
               title="Vibrant Portraits of 2020"
@@ -59,7 +56,6 @@ export default function HomePage() {
           </li>
 
           <li>
-            {" "}
             <Cards
               images={pic3}
               title="36 Days of Malayalam type"
@@ -69,6 +65,7 @@ export default function HomePage() {
           </li>
         </ul>
       </section>
+    </> */}
     </>
   );
 }
