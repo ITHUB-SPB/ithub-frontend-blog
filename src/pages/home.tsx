@@ -1,6 +1,6 @@
 import Post from "../ui/post/post";
 import Cards from "../ui/cards/cards";
-import pic1 from "../assets/images.jpg";
+import pic1 from "/images.jpg"
 import Footer from "../ui/footer/footer";
 
 export default function HomePage() {
