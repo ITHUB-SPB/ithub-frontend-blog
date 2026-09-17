@@ -8,7 +8,7 @@ import Nav from "./ui/nav/nav"
 type Page = 'home' | 'works' | 'example'
 
 export default function App() {
-  const [page, setPage] = useState<Page>('example')
+  const [page, setPage] = useState<Page>('home')
 
   const pages = {
     home: <HomePage />,
