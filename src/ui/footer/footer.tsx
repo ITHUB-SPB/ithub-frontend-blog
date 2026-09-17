@@ -8,7 +8,7 @@ type IngLinkProps = {
 function ImgLink(props: IngLinkProps) {
   return (
     <a href={props.href} target="_blank">
-      <svg className={styles.listMember} role="presentation" aria-hidden="true">
+      <svg className={styles.icon} role="presentation" aria-hidden="true">
         <use href={`/footerIcons.svg#${props.icon}`}></use>
       </svg>
     </a>
@@ -17,25 +17,25 @@ function ImgLink(props: IngLinkProps) {
 
 export default function Footer() {
   return (
-    <>
+    <div className={styles.box}>
       <ul className={styles.list}>
-        <li className={styles.listMember}>
+        <li>
           <ImgLink
             href="https://www.facebook.com/?locale=ru_RU"
             icon="fb-icon"
           />
         </li>
-        <li className={styles.listMember}>
+        <li>
           <ImgLink href="https://www.instagram.com/" icon="insta-icon" />
         </li>
-        <li className={styles.listMember}>
+        <li>
           <ImgLink href="https://x.com" icon="twt-icon" />
         </li>
-        <li className={styles.listMember}>
+        <li>
           <ImgLink icon="lnkdIn-icon" href="https://linkedin.com/" />
         </li>
       </ul>
       <h3 className={styles.text}>Copyright ©2020 All rights reserved </h3>
-    </>
+    </div>
   );
 }
