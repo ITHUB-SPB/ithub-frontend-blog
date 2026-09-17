@@ -40,26 +40,35 @@ export default function HomePage() {
       </section>
       <section>
         <h2>Featured works</h2>
-        <div className="collumn">
-          <Cards
-            images={pic1}
-            title="Designing Dashboards"
-            date="2020"
-            annotation="Dashboard"
-          />
-          <Cards
-            images={pic2}
-            title="Vibrant Portraits of 2020"
-            date="2018"
-            annotation="Illustration"
-          />
-          <Cards
-            images={pic3}
-            title="36 Days of Malayalam type"
-            date="2018"
-            annotation="Typography"
-          />
-        </div>
+        <ul className="collumn">
+          <li>
+            <Cards
+              images={pic1}
+              title="Designing Dashboards"
+              date="2020"
+              annotation="Dashboard"
+            />
+          </li>
+          <li>
+            {" "}
+            <Cards
+              images={pic2}
+              title="Vibrant Portraits of 2020"
+              date="2018"
+              annotation="Illustration"
+            />
+          </li>
+
+          <li>
+            {" "}
+            <Cards
+              images={pic3}
+              title="36 Days of Malayalam type"
+              date="2018"
+              annotation="Typography"
+            />
+          </li>
+        </ul>
       </section>
       <Footer />
     </>

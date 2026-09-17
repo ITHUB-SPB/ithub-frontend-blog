@@ -121,15 +121,14 @@ ul {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 100px;
-  align-items: center;
-  max-width: 1000px;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 2rem;
   height: 550px;
-  width: 75%;
 }
 
 .introduction-textbox {
+  width: 506px;
   display: flex;
   height: 75%;
   flex-direction: column;
