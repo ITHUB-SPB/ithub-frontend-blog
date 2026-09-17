@@ -21,6 +21,7 @@
 .card__meta{
   display: flex;
   padding: 20px 0;
+  align-items: center;
 }
 
 .card__meta__date {
@@ -31,6 +32,8 @@
   height: 25px;
   background: #142850;
   border-radius: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .card__meta__annotation {

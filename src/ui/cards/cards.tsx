@@ -14,7 +14,7 @@ export default function Cards(props: CardsProps) {
       <div className="card__content">
         <h3 className="card__title">{props.title}</h3>
         <section className="card__meta">
-            <span className="card__meta__date">{props.date}</span>
+          <span className="card__meta__date">{props.date}</span>
           <span className="card__meta__annotation">{props.annotation}</span>
         </section>
         <p>
