@@ -1,4 +1,10 @@
 import Post from "../ui/post/post";
+import Work from "../ui/work/work";
+
+import WorkImage1 from "./../assets/work_image_1.png";
+import WorkImage2 from "./../assets/work_image_2.png";
+import WorkImage3 from "./../assets/work_image_3.png";
+import WorkImage4 from "./../assets/work_image_4.png";
 
 export default function HomePage() {
     return (
@@ -37,6 +43,18 @@ export default function HomePage() {
                             date="14 May 2026"
                         />
                     </div>
+                </div>
+            </section>
+            <section>
+                <div className="container">
+                    <h2>Featured works</h2>
+                    <Work
+                        title="Designing Dashboards"
+                        year="2020"
+                        tags="Dashboard"
+                        description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+                        image={WorkImage1}
+                    />
                 </div>
             </section>
         </>
