@@ -1,6 +1,5 @@
 import Post from "../ui/post/post";
 import Cards from "../ui/cards/cards";
-import Footer from "../ui/footer/footer";
 
 import pic1 from "/picture1.png";
 import pic2 from "/picture2.png";
@@ -70,7 +69,6 @@ export default function HomePage() {
           </li>
         </ul>
       </section>
-      <Footer />
     </>
   );
 }
