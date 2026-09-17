@@ -7,8 +7,8 @@ export default function HomePage() {
             <section>
                 <h2>Recent posts</h2>
                 <div className="row">
-                    <Post title="Making a design system from scratch" date="12 Feb 2020" />
-                    <Post title="Creating pixel perfect icons in Figma" date="14 May 2026" />
+                    <Post title="Making a design system from scratch" date="12 Feb 2020" annotation="Design, Pattern"/>
+                    <Post title="Creating pixel perfect icons in Figma" date="12 Feb 2020" annotation="Figma, Icon Design" />
                 </div>
             </section>
         </>
