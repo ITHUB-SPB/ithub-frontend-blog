@@ -9,15 +9,19 @@ import pic3 from "/picture3.png";
 export default function HomePage() {
   return (
     <>
-      <section>
-        <h1>Hi, I am John, Creative Technologist</h1>
-        <p>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <img src="/avatar.png" alt="" />
-        <div>Download Resume</div>
+      <section className="introduction">
+        <div className="introduction-textbox">
+          <h1 className="introduction-title">
+            Hi, I am John, Creative Technologist
+          </h1>
+          <p className="introduction-text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <button className="introduction-button">Download Resume</button>
+        </div>
+        <img src="/avatar.png" alt="" className="introduction-avatar" />
       </section>
       <section>
         <h2>Recent posts</h2>
