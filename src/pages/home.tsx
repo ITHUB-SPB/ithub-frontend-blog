@@ -36,7 +36,7 @@ export default function HomePage() {
       </section>
       <section>
         <h2>Featured works</h2>
-        <div>
+        <div className="collumn">
           <Cards
             images={pic1}
             title="Designing Dashboards"
