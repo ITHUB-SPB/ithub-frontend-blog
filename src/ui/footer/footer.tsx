@@ -8,7 +8,7 @@ type IngLinkProps = {
 function ImgLink(props: IngLinkProps) {
   return (
     <a href={props.href} target="_blank">
-      <svg className="button-icon" role="presentation" aria-hidden="true">
+      <svg className={styles.listMember} role="presentation" aria-hidden="true">
         <use href={`/footerIcons.svg#${props.icon}`}></use>
       </svg>
     </a>
