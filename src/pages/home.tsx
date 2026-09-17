@@ -2,7 +2,9 @@ import Post from "../ui/post/post";
 import Cards from "../ui/cards/cards";
 import Footer from "../ui/footer/footer";
 
-import pic1 from "/images.jpg";
+import pic1 from "/picture1.png";
+import pic2 from "/picture2.png";
+import pic3 from "/picture3.png";
 
 export default function HomePage() {
   return (
@@ -14,10 +16,8 @@ export default function HomePage() {
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <div>
-          <img src="" alt="" />
-        </div>
-        <div></div>
+        <img src="/avatar.png" alt="" />
+        <div>Download Resume</div>
       </section>
       <section>
         <h2>Recent posts</h2>
@@ -43,18 +43,18 @@ export default function HomePage() {
             date="2020"
             annotation="Dashboard"
           />
-          {/* <Cards
-            images={pic1}
+          <Cards
+            images={pic2}
             title="Vibrant Portraits of 2020"
             date="2018"
             annotation="Illustration"
           />
           <Cards
-            images={pic1}
+            images={pic3}
             title="36 Days of Malayalam type"
             date="2018"
             annotation="Typography"
-          /> */}
+          />
         </div>
       </section>
       <Footer />

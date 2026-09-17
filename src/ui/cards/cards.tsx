@@ -10,9 +10,7 @@ type CardsProps = {
 export default function Cards(props: CardsProps) {
   return (
     <article className="card">
-      <div className="card__image">
         <img src={props.images} alt="" />
-      </div>
       <h3>{props.title}</h3>
       <section className="card__meta">
         <span className="card__meta__item">{props.date}</span>

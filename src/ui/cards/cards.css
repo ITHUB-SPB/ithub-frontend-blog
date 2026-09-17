@@ -3,11 +3,6 @@
     background-color: white;
 }
 
-.card__image {
-    height: 50px;
-    width: 50px;
-}
-
 .card__meta {
     display: flex;
     margin-top: 17px;
