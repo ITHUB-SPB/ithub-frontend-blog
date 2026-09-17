@@ -17,7 +17,7 @@ function ImgLink(props: IngLinkProps) {
   );
 }
 
-function Footer() {
+export default function Footer() {
   return (
     <>
       <ul className={styles.list}>

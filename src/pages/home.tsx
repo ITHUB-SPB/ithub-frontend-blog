@@ -1,6 +1,7 @@
 import Post from "../ui/post/post";
 import Cards from "../ui/cards/cards";
 import pic1 from "../assets/images.jpg";
+import Footer from "../ui/footer/footer";
 
 export default function HomePage() {
   return (
@@ -44,6 +45,7 @@ export default function HomePage() {
           /> */}
         </div>
       </section>
+      <Footer/>
     </>
   );
 }
