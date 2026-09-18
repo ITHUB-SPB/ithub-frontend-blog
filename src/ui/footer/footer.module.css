@@ -17,6 +17,7 @@
 }
 
 .box {
+  padding: 40px 0 0 0;
   height: 182px;
   width: 1152px;
   display: flex;
