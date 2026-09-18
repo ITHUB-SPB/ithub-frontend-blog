@@ -17,7 +17,7 @@ function ImgLink(props: IngLinkProps) {
 
 export default function Footer() {
   return (
-    <div className={styles.box}>
+    <footer className={styles.box}>
       <ul className={styles.list}>
         <li>
           <ImgLink
@@ -36,6 +36,6 @@ export default function Footer() {
         </li>
       </ul>
       <h3 className={styles.text}>Copyright ©2020 All rights reserved </h3>
-    </div>
+    </footer>
   );
 }

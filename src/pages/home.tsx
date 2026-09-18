@@ -10,31 +10,39 @@ export default function HomePage() {
     <>
       <section className="introduction">
         <div className="introduction-textbox">
-          <h1>Hi, I am John, Creative Technologist</h1>
+          <h1>
+            Hi, I am John,
+            <br /> Creative Technologist
+          </h1>
           <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet{" "}
+            <br />
             sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
+            veniam <br /> consequat sunt nostrud amet.
           </p>
           <button className="introduction-button">Download Resume</button>
         </div>
         <img className="introduction-avatar" src="/avatar.png" alt="" />
       </section>
-      {/* <section className="recent">
-        <h2>Recent posts</h2>
-        <div className="row">
-          <Post
-            title="Making a design system from scratch"
-            date="12 Feb 2020"
-            annotation="Design, Pattern"
-          />
-          <Post
-            title="Creating pixel perfect icons in Figma"
-            date="12 Feb 2020"
-            annotation="Figma, Icon Design"
-          />
+
+      <section className="recent">
+        <div className="postbox">
+          <h2>Recent posts</h2>
+          <div className="row">
+            <Post
+              title="Making a design system from scratch"
+              date="12 Feb 2020"
+              annotation="Design, Pattern"
+            />
+            <Post
+              title="Creating pixel perfect icons in Figma"
+              date="12 Feb 2020"
+              annotation="Figma, Icon Design"
+            />
+          </div>
         </div>
       </section>
+
       <section className="featured">
         <h2>Featured works</h2>
         <ul className="collumn">
@@ -54,7 +62,6 @@ export default function HomePage() {
               annotation="Illustration"
             />
           </li>
-
           <li>
             <Cards
               images={pic3}
@@ -65,7 +72,6 @@ export default function HomePage() {
           </li>
         </ul>
       </section>
-    </> */}
     </>
   );
 }
