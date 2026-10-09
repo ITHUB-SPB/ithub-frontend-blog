@@ -1,27 +1,16 @@
+import { Link } from '@tanstack/react-router'
 import styles from './nav.module.css'
 
-type PageName = 'home' | 'works' | 'example'
 
-type NavProps = {
-  active: PageName,
-  setPage: (name: PageName) => void
-}
-
-export default function Nav(props: NavProps) {
-  function computeLinkStyles(page: PageName) {
-    return `${styles.link} ${props.active === page ? styles.active : ""}`
-  }
-
+export default function Nav() {
   return (
     <nav className={styles.nav}>
       <ul className={styles.list}>
         <li>
-          <span className={computeLinkStyles('home')} onClick={() => props.setPage('home')}
-          >Home</span>
+          <Link to='/' className={styles.link} activeProps={{ className: styles.active }}>Home</Link>
         </li>
         <li>
-          <span className={computeLinkStyles('works')} onClick={() => props.setPage('works')}
-          >Works</span>
+          <Link to='/works' className={styles.link} activeProps={{ className: styles.active }}>Works</Link>
         </li>
       </ul>
     </nav>

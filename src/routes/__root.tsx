@@ -1,4 +1,5 @@
 import { Outlet, createRootRoute } from "@tanstack/react-router";
+import Nav from "../ui/nav/nav";
 
 export const Route = createRootRoute({
     component: RootComponent,
@@ -11,8 +12,9 @@ function NotFound() {
 
 function RootComponent() {
     return (
-        <div>
+        <>
+            <Nav />
             <Outlet />
-        </div>
+        </>
     )
 }

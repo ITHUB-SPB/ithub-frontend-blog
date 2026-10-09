@@ -9,27 +9,105 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as IndexRouteImport } from './routes/index'
+import { Route as WorksRouteImport } from './routes/works'
+import { Route as PostPostIdRouteImport } from './routes/post.$postId'
+import { Route as WorkWorkIdRouteImport } from './routes/work.$workId'
 
-export interface FileRoutesByFullPath {}
-export interface FileRoutesByTo {}
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorksRoute = WorksRouteImport.update({
+  id: '/works',
+  path: '/works',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PostPostIdRoute = PostPostIdRouteImport.update({
+  id: '/post/$postId',
+  path: '/post/$postId',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkWorkIdRoute = WorkWorkIdRouteImport.update({
+  id: '/work/$workId',
+  path: '/work/$workId',
+  getParentRoute: () => rootRouteImport,
+} as any)
+
+export interface FileRoutesByFullPath {
+  '/': typeof IndexRoute
+  '/works': typeof WorksRoute
+  '/post/$postId': typeof PostPostIdRoute
+  '/work/$workId': typeof WorkWorkIdRoute
+}
+export interface FileRoutesByTo {
+  '/': typeof IndexRoute
+  '/works': typeof WorksRoute
+  '/post/$postId': typeof PostPostIdRoute
+  '/work/$workId': typeof WorkWorkIdRoute
+}
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
+  '/': typeof IndexRoute
+  '/works': typeof WorksRoute
+  '/post/$postId': typeof PostPostIdRoute
+  '/work/$workId': typeof WorkWorkIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: never
+  fullPaths: '/' | '/works' | '/post/$postId' | '/work/$workId'
   fileRoutesByTo: FileRoutesByTo
-  to: never
-  id: '__root__'
+  to: '/' | '/works' | '/post/$postId' | '/work/$workId'
+  id: '__root__' | '/' | '/works' | '/post/$postId' | '/work/$workId'
   fileRoutesById: FileRoutesById
 }
-export interface RootRouteChildren {}
-
-declare module '@tanstack/react-router' {
-  interface FileRoutesByPath {}
+export interface RootRouteChildren {
+  IndexRoute: typeof IndexRoute
+  WorksRoute: typeof WorksRoute
+  PostPostIdRoute: typeof PostPostIdRoute
+  WorkWorkIdRoute: typeof WorkWorkIdRoute
 }
 
-const rootRouteChildren: RootRouteChildren = {}
+declare module '@tanstack/react-router' {
+  interface FileRoutesByPath {
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/works': {
+      id: '/works'
+      path: '/works'
+      fullPath: '/works'
+      preLoaderRoute: typeof WorksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/post/$postId': {
+      id: '/post/$postId'
+      path: '/post/$postId'
+      fullPath: '/post/$postId'
+      preLoaderRoute: typeof PostPostIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work/$workId': {
+      id: '/work/$workId'
+      path: '/work/$workId'
+      fullPath: '/work/$workId'
+      preLoaderRoute: typeof WorkWorkIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+  }
+}
+
+const rootRouteChildren: RootRouteChildren = {
+  IndexRoute: IndexRoute,
+  WorksRoute: WorksRoute,
+  PostPostIdRoute: PostPostIdRoute,
+  WorkWorkIdRoute: WorkWorkIdRoute,
+}
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
